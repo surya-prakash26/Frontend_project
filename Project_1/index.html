@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+     <!-- Required meta tags always come first -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta http-equiv="x-ua-compatible" content="ie=edge">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+     <link rel="stylesheet" href="CSSindex/styles.css">
+     <title>Ristorante Con Fusion</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <!-- collapse is a javascript component is a very useful plugin...here basically we are targeting data and using "data-toggler" we are toggling it......and "data-toggle" to collapse the data inside navbar....and the class "navbar-toggler" is used to toggle navbar -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- so navbar is the classname, navbar-darl==> it will have a dark theme
+        bg-primary==>blue color in bootstrap, fixed-top==> it will be fixed at the top when u scroll down...you can use static class or fixed-bottom etc -->
+        <div class="container">
+            <a class="navbar-brand mr-auto " href="#"><img src="./logo.png"  width="40" height="30">   </a>
+            <!-- So mr-auto means content will be pushed as much as possible and in right side you will have margin as max -->
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <!-- So mr-auto means content will be pushed as much as possible and in right side you will have margin as max -->
+                    <li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li> 
+                    <!-- after span class at the closing tag always leave one space and the wriiten content...see space before "Home" -->
+                </ul>
+               <!-- the span below is to trigger the showing and hidimng modal in the navbar -->
+
+                <span class="navbar-text" >
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span>LOGIN
+                    </a>
+                </span>
+
+            </div>
+            <!-- <h1>Ristorante Con Fusion</h1> -->
+            
+        </div>
+
+    </nav>
+    <!-- basically a modal has 3 parts header,body and footer...so this things are wrapped under content div -->
+    <!-- this the main div in which u will find modal -->
+     <div id="loginModal" class="modal fade" role="dialog">
+         <!-- fade is an animation supported by bootstrap -->
+         <div class="modal-dialog modal-lg" role="content" id="login">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h4 class="modak-title">Reserve Table</h4>
+                     <button type="button" class="close" data-dismiss="modal" >
+                         &times;
+                         <!-- basically i created a cross button to close the logon tab -->
+                     </button>
+                 </div>
+                 <div class="modal-body">
+                        <div class="card">
+                            
+                            <div class="card-body">
+            
+                    <div class="row guest col-8 ">
+                        <div class="ml-4 mb-1">
+                          <p1 class="entries mr-3">Number of guest</p1>
+                        </div>
+                    <div class="form-check-inline ">
+                    <label class="form-check-label">
+                        <input type="radio" name="optradio" class="form-check-input"> 1
+                    </label> 
+                 </div>
+            
+                 <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" name="optradio" class="form-check-input"> 2
+                    </label> 
+                 </div>
+            
+                 <div class="form-check-inline ">
+                    <label class="form-check-label">
+                        <input type="radio" name="optradio" class="form-check-input"> 3
+                    </label> 
+                 </div>
+            
+                 <div class="form-check-inline ">
+                    <label class="form-check-label">
+                        <input type="radio" name="optradio" class="form-check-input"> 4
+                    </label> 
+                 </div>
+            
+                 <div class="form-check-inline ">
+                    <label class="form-check-label">
+                        <input type="radio" name="optradio" class="form-check-input"> 5
+                    </label> 
+                 </div>
+            
+                 <div class="form-check-inline ">
+                    <label class="form-check-label">
+                        <input type="radio" name="optradio" class="form-check-input"> 6
+                    </label> 
+                </div>
+
+            </div>
+
+            <div class="row smokingsection mt-3 col-8">
+                <div class="ml-4">
+                    <p class="mr-4">Section</p>
+                </div>
+                <div class="col-12 col-sm-8 mr-0 mb-2">
+                    
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-success active">
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                        </label>
+                        <label class="btn btn-danger">
+                          <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                        </label></div>
+                </div>
+            </div>
+
+            
+            
+                <div class="input-group date mt-3 col-12 col-sm-9 "id="section" data-provide="datepicker">
+                    
+                    <h class=" col-12 mb-3 col-sm-3">Date and time</h>  
+
+                    <div class="empty col-12 col-sm-8 ">
+                        <h id="date" class="DATE col-12 col-sm-6">DATE</h>
+                        <h id="date"class="DATE col-12 col-sm-6">TIME</h>
+
+                    </div>
+                    
+                   
+                        <!-- <input type="text" class="col-12 form-control">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"> </span>
+                    
+                    <input type="text" class="col-12 form-control offset-1">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th" ></span>
+                    </div> -->
+    
+                    <div class=" row reserve col-12 mt-3 mb-3 justify-content-center ">
+                        <a href="#" class=" btn btn-secondary btn-lg mr-1" role="button">Cancel</a>
+                        <a href="#" class=" btn btn-primary btn-lg" role="button">Reserve</a>
+                        
+                    </div>
+                    
+                  </div>
+                
+         </div>
+
+     </div>
+                
+
+                    
+                 </div>
+                
+             </div>
+         </div>
+     </div>
+
+     
+    
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <!-- col-12==> for extra small screen occupy all the 12 columns of a row 
+                    and  for small to extralarge screen occupy all the 6 columns of a row -->
+                    <h1>Ristorante con Fusion</h1>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <img src="./logo.png" alt="retry" class="img-fluid">
+                </div>
+                 
+                <div class="ResTable col-12 col-sm-3 align-self-center justify-content-center">
+                    <a class="btn btn-block btn-warning " href="#login" role="button" data-toggle="tooltip" data-html="true"
+                    title="or Call Us at  +91 0985315215 " data-placement="bottom">Reserve Table</a>
+                    <!-- "title" is used to display the content of a tooltip..."br and strong" tags are used to style them "data-toggle" is set as tooltip...so in tooltip whenever u hover the pointer over the button u will see a msg and "data-html" is "true" means html can be used to style them...as we have done  -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="row mt-3 mb-3 mr-auto ml-auto row-content justify-content-center">
+        <div class="col-12 col-sm-8 ">
+            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid"
+                            src="./uthappizza.png" alt="Uthappizza">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$4.99</span></h2>
+                            <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                                Italian pizza, topped with Cerignola olives, ripe vine
+                                cherry tomatoes, Vidalia onion, Guntur chillies and
+                                Buffalo Paneer.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid"
+                            src="./buffet.png" alt="Uthappizza">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h2 >Weekend Grand Buffet
+                            <span class="badge badge-danger">NEW</span>
+                        </h2>
+                        <p class=" d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid"
+                            src="./alberto.png" alt="Uthappizza">
+
+                        <div class="carousel-caption d-none d-md-block">
+                        <h2 >Alberto Soumya
+                            <span class="badge badge-danger">NEW</span>
+                        </h2>
+                        
+                    <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+
+            </div>
+         </div>
+    </div>
+    
+    <div class="container">
+        <div class="row row-content align-items-center justify-content-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3 ">
+                <!-- col-12==> for extra small screen occupy all the 12 columns of a row 
+                    and  for small screen occupy 4 columns of a row 
+                and for medium to xtralarge occupy 3 columns-->
+                <h3>Our Lipsmacking Culinary Creations</h3>
+            </div>
+            <div class="col-12 col-sm-8 order-sm-first media mt-5 mb-5 align-self-center">
+                <img class="d-flex mr-3 img-thumbnail align-self-center"
+                        src="./uthappizza.png" alt="retry">
+                <div class="media-body">
+                    <h2  class="mt-0">Uthappizza 
+                        <span class="badge badge-danger">HOT</span>
+                        <span class="badge badge-pill badge-secondary">$4.99</span>
+                    </h2>
+                    <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                        Italian pizza, topped with Cerignola olives, ripe vine
+                        cherry tomatoes, Vidalia onion, Guntur chillies and
+                        Buffalo Paneer.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content align-items-center  justify-content-center">
+            <div class="col-12 col-sm-2 order-sm-first  mt-5 mb-5">
+                <h3>This Month's Promotions</h3>
+            </div>
+            <div class="media col-12 col-sm-10 col-md-9  mt-5 mb-5 align-self-center">
+                <div class="media-body ">
+                    <h2 class="mt-0">Weekend Grand Buffet
+                        <span class="badge badge-danger">NEW</span>
+                    </h2>
+                    <p class=" d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                </div>
+                <img src="./buffet.png" alt="retry" class=" ml-3 d-flex img-thumbnail align self center">
+
+            </div>
+            
+        </div>
+
+        <div class="row row-content  align-items-center justify-content-center">
+            
+            <div class="media col-12 mt-5 mb-5 col-sm-10 order-sm-first col-md-9 align-self-center">
+                <img src="./alberto.png" alt="retry" class="  d-flex img-thumbnail mr-5 align self center">
+                
+                <div class="media-body">
+
+                    <h2>Alberto Somayya</h2>
+                    <h4>Executive Chef</h4>
+
+                    <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-2 order-sm-last col-md-3 align-self-center">
+                <h3>Meet our Culinary Specialists</h3>
+            </div>
+           
+        </div>
+
+
+
+
+
+
+
+
+        <!-- <div class="media col-12 col-sm-10 align-self-center order-sm-first ">
+            <img src="./alberto.png" alt="retry" class=" mr-3 d-flex img-thumbnail align self center">
+            <h2>Alberto Somayya</h2>
+            <h4>Executive Chef</h4>
+            
+            <div class="media-body">
+                 <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+            </div>
+        </div> -->
+
+
+
+    </div>
+<div class="container2  ">
+
+    <div class="row row-content2  mb-5 justify-content-center">
+  <!-- wherever u see "row row-content" the word "row" is the bootstrap class says row
+and "row-content" is the class name i have assigned randomly -->
+        <div class="radio col-12 col-sm-6">
+            <div class="card mt-5">
+                <h3 class="card-header bg-warning text-white">Reserve Table</h3>
+                <div class="card-body">
+
+              <div class="head col-8 ">
+              <p1 class="entries mr-4">Number of guest</p1>
+                   
+              
+      
+        <div class="form-check-inline ">
+        <label class="form-check-label">
+            <input type="radio" name="optradio" class="form-check-input"> 1
+        </label> 
+     </div>
+
+     <div class="form-check-inline">
+        <label class="form-check-label">
+            <input type="radio" name="optradio" class="form-check-input"> 2
+        </label> 
+     </div>
+
+     <div class="form-check-inline ">
+        <label class="form-check-label">
+            <input type="radio" name="optradio" class="form-check-input"> 3
+        </label> 
+     </div>
+
+     <div class="form-check-inline ">
+        <label class="form-check-label">
+            <input type="radio" name="optradio" class="form-check-input"> 4
+        </label> 
+     </div>
+
+     <div class="form-check-inline ">
+        <label class="form-check-label">
+            <input type="radio" name="optradio" class="form-check-input"> 5
+        </label> 
+     </div>
+
+     <div class="form-check-inline ">
+        <label class="form-check-label">
+            <input type="radio" name="optradio" class="form-check-input"> 6
+        </label> 
+    </div></div></div>
+
+      
+
+        <div class="row1 date col-12 mt-3" id="section">
+            
+            <div class="input-group date col-12 col-sm-9 " data-provide="datepicker">
+                <div class="col-12 col-sm-4 ml-1">
+                    <p>Date and time</p></div>  
+               
+                    <input type="text" class="col-12 form-control">
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>
+                
+                <input type="text" class="col-12 form-control offset-1">
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>
+
+                <div class=" row1 reserve col-12 mt-3 mb-3 justify-content-center ">
+                    <a href="#" class=" btn btn-primary btn-lg" role="button">Reserve</a>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+    
+    </div>
+
+  </div>
+</div>
+
+</div>
+    <footer  class="footer">
+        <div class="container">
+            <div class="row">             
+                <div  class="col-4 offset-1 col-sm-2">
+                    <!-- col-==> for extra small screen occupy 4 columns in a row
+                    and  for small to xtra large occupy remaining 3 columns of a row -->
+                    <h5>Links</h5>
+                    <ul class="list-unstyled"
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-4 align-self-center">
+                    <!-- col-==> for extra small screen occupy the 7 columns of row below the above div
+                    and  for small to xtra large occupy 5  columns of a row adjacent to the above div's content 
+                and the remaining space will be taken by the last div container-->
+                    <h5>Our Address</h5>
+                    <address>
+		              121, Clear Water Bay Road<br>
+		              Clear Water Bay, Kowloon<br>
+		              HONG KONG<br>
+		              <i class="fa fa-phone" aria-hidden="true"></i> +852 1234 5678<br>
+		              <i class="fa fa-fax" aria-hidden="true"></i> +852 8765 4321<br>
+		              <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:confusion@food.net"> confusion@food.net</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                  <div class="tet-center">
+                        <!-- col-12==> for extra small screen occupy the row below the above div
+                    and  for small to xtra large screen occupy remaining 4 columns of a row adjacent to the above div's content 
+                -->
+                        <a href="btn btn-social-icon btn-google"><i class="fa fa-google" aria-hidden="true"></i>  </a>
+                        <a href="btn btn-social-icon btn-facebook"><i class="fa fa-facebook" aria-hidden="true"></i>  </a>
+                        <a href="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i>  </a>
+                        <a href="btn btn-social-icon btn-twitter"><i class="fa fa-twitter" aria-hidden="true"></i>  </a>
+                        <a href="btn btn-social-icon btn-youtube"><i class="fa fa-youtube" aria-hidden="true"></i>  </a>
+                        <a href="btn btn-social-icon"><i class="fa fa-envelope" fa-lg></i> Mail</a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+           </div>
+        </div>
+    </footer class="footer">
+
+    
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $$(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>

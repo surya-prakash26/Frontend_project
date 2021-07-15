@@ -1,0 +1,99 @@
+.row-header{
+    margin: 0px auto;
+    padding:0px auto;
+}
+.row-content{
+    /* margin: 0px auto;
+    padding: 50px 10px 50px 0px; */
+    border-bottom: 2px ridge; 
+    min-height: 280px;
+    
+
+}
+.footer{
+    background-color: rgb(236, 235, 233);
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+    border-top: 5px ridge;
+    color: black;
+}
+.jumbotron{
+    
+    background-color: #9575CD;
+    padding: 70px 30px 70px 30px;
+}
+.address{
+    font-size:80%;
+    margin: 0px;
+    color: white;
+}
+body{
+    padding:50px 0px 0px 0px;
+    z-index: 0;
+}
+.navbar-dark{
+    background-color: #512DA8;
+
+}
+
+.carousel {
+    background:#512DA8;
+}
+
+.carousel-item {
+  height:300px;
+}
+
+.carousel-item img {
+    position:absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+.guest{
+    padding-left: 20px;
+}
+.smokingsection{
+    padding-left: 20px;
+}
+.boxe{
+    margin-left: 45px;
+}
+.DATE{
+    border: 1px solid black;
+    padding-left: 50px;
+    padding-right:50px ;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    margin-right: 16px;
+    
+}
+.carousel {
+    background:#512DA8;
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+.modal-header{
+    background: #512DA8;
+    color: white;
+}
+.modal-body{
+    background: #D1C4E9;;
+}
+.card{
+    background: #D1C4E9;
+    color: black;
+}
+#date{
+    background: white;
+}
